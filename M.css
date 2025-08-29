@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/*Sección de arriba*/
+
+.ParteArriba {
+  background-color: #0074d9;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  height: auto;
+}
+
+/*Principio de la página*/
+
+header.mediopanel {
+  color: #ffffff;
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #0074d9;
+  background-image: url(fotos/Fachada\ Reflejos\ No\ Logo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50vh;
+}
+
+.mediopanel h1 {
+  font-size: 4rem;
+  margin-bottom: 0.5rem;
+}
+
+.mediopanel p {
+  font-size: 2rem;
+}
+
+.btn-wsp {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #25d366;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn-mail {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #ff0000;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+/* Por defecto (móvil): columna, texto arriba, imagen abajo */
+.contenedol, .Serv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Ordena los divs en columna */
+.contenedol .info,
+.Serv .servicios {
+  order: 1;
+}
+.contenedol .FotosLavanderia,
+.Serv .fotos {
+  order: 2;
+}
+
+/* Pantallas anchas: fila, imágenes a la derecha o izquierda */
+@media (min-width: 992px) {
+  .contenedol {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .contenedol .info {
+    order: 1; /* texto a la izquierda */
+  }
+  .contenedol .FotosLavanderia {
+    order: 2; /* imagen a la derecha */
+    margin-left: 2rem;
+  }
+
+  .Serv {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .Serv .fotos {
+    order: 1; /* imágenes a la izquierda */
+    margin-right: 2rem;
+  }
+  .Serv .servicios {
+    order: 2; /* texto a la derecha */
+  }
+}
+
+/*.contenedol, .Serv {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}*/
+
+/*Quienes somos*/
+.contenedol {
+  color: #ffffff;
+  background-color: #0074d9;
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding: 0.2rem;
+}
+
+.contenedol img {
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.info {
+  flex: 300px;
+  max-width: 500px;
+  margin: 2rem;
+}
+
+/*Servicios con imágenes de animación*/
+.Serv {
+  color: #000000;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem;
+}
+
+.Serv img {
+  width: 400px;
+  height: 420px;
+  border-radius: 10px;
+  margin-left: 100px;
+}
+
+.servicios {
+  flex: 400px;
+  max-width: 500px;
+}
+
+/*Ubicación y las google maps con textos, el contacto no es contanto*/
+
+.ubicacion, .op {
+  padding: 2rem;
+  background-color: #f2f9ff;
+  text-align: center;
+}
+
+.op {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.op form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 300px;
+}
+
+.op input, .op textarea {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.op button {
+  background-color: #0074d9;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/*Final del todo*/
+
+footer {
+  background-color: #0074d9;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .contenedol, .op {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.opiniones {
+  float: left;
+}
