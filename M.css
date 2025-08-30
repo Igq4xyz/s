@@ -147,10 +147,9 @@ header.mediopanel {
 }
 
 .Serv img {
-  display: block;
-  margin: 20px auto 0 auto;
-  max-width: 75%;          
-  height: auto;
+  width: 400px;
+  height: 420px;
+  border-radius: 10px;
 }
 
 .servicios {
@@ -217,4 +216,5 @@ footer {
   float: left;
 
 }
+
 
