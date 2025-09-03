@@ -37,9 +37,9 @@ header.mediopanel {
 .mediopanel p {
   font-size: 2rem;
 }
-
+/*Botones*/
 .btn-wsp {
-  display: inline-block;
+  /*display: inline-block;*/
   margin-top: 1rem;
   background-color: #25d366;
   color: white;
@@ -50,7 +50,7 @@ header.mediopanel {
 }
 
 .btn-mail {
-  display: inline-block;
+  /*display: inline-block;*/
   margin-top: 1rem;
   background-color: #ff0000;
   color: white;
@@ -61,7 +61,7 @@ header.mediopanel {
 }
 
 .btn-servicios {
-  display: inline-block;
+  /*display: inline-block;*/
   margin-top: 1rem;
   background-color: #0074d9;
   color: white;
@@ -130,7 +130,7 @@ header.mediopanel {
   padding: 0.2rem;
 }
 
-.contenedol img {
+.FotosLavanderia {
   max-width: 100%;
   height: auto;
   border-radius: 10px;
@@ -224,3 +224,4 @@ footer {
 .opiniones {
   float: left;
 }
+
