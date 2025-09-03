@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background-color: #ffffff;
   color: #333;
 }
@@ -63,7 +63,7 @@ header.mediopanel {
 .btn-servicios {
   display: inline-block;
   margin-top: 1rem;
-  background-color: #40E0D0;
+  background-color: #0074d9;
   color: white;
   padding: 0.75rem 1.5rem;
   text-decoration: none;
@@ -71,8 +71,9 @@ header.mediopanel {
   font-weight: bold;
 }
 
-/* Por defecto (móvil): columna, texto arriba, imagen abajo */
-.contenedol, .Serv {
+/* Por defecto pantallas anchas*/
+.contenedol,
+.Serv {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -89,7 +90,7 @@ header.mediopanel {
   order: 2;
 }
 
-/* Pantallas anchas: fila, imágenes a la derecha o izquierda */
+/* Pantallas anchas*/
 @media (min-width: 992px) {
   .contenedol {
     flex-direction: row;
@@ -97,10 +98,10 @@ header.mediopanel {
     justify-content: center;
   }
   .contenedol .info {
-    order: 1; /* texto a la izquierda */
+    order: 1;
   }
   .contenedol .FotosLavanderia {
-    order: 2; /* imagen a la derecha */
+    order: 2;
     margin-left: 2rem;
   }
 
@@ -110,19 +111,13 @@ header.mediopanel {
     justify-content: center;
   }
   .Serv .fotos {
-    order: 1; /* imágenes a la izquierda */
+    order: 1;
     margin-right: 2rem;
   }
   .Serv .servicios {
-    order: 2; /* texto a la derecha */
+    order: 2;
   }
 }
-
-/*.contenedol, .Serv {
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}*/
 
 /*Quienes somos*/
 .contenedol {
@@ -136,7 +131,7 @@ header.mediopanel {
 }
 
 .contenedol img {
-  max-width: 700px;
+  max-width: 100%;
   height: auto;
   border-radius: 10px;
 }
@@ -147,7 +142,7 @@ header.mediopanel {
   margin: 2rem;
 }
 
-/*Servicios con imágenes de animación*/
+/*Servicios con imágenes*/
 .Serv {
   color: #000000;
   display: flex;
@@ -170,7 +165,8 @@ header.mediopanel {
 
 /*Ubicación y las google maps con textos, el contacto no es contanto*/
 
-.ubicacion, .op {
+.ubicacion,
+.op {
   padding: 2rem;
   background-color: #f2f9ff;
   text-align: center;
@@ -190,7 +186,8 @@ header.mediopanel {
   width: 300px;
 }
 
-.op input, .op textarea {
+.op input,
+.op textarea {
   padding: 0.75rem;
   border: 1px solid #ccc;
   border-radius: 8px;
@@ -217,7 +214,8 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .contenedol, .op {
+  .contenedol,
+  .op {
     flex-direction: column;
     align-items: center;
   }
@@ -225,7 +223,4 @@ footer {
 
 .opiniones {
   float: left;
-
 }
-
-
