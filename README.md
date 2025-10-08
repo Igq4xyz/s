@@ -1,1 +1,2 @@
-Autor: Izan Gomis Quirant
+# Autor
+Izan Gomis Quirant
